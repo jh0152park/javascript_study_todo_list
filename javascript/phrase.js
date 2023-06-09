@@ -1,6 +1,6 @@
 const PHRASE = document.querySelector("#phrase");
 const LINE = PHRASE.querySelector("div:first-child");
-const SPEAKER = PHRASE.querySelector("div:nth-child(2)");
+const SPEAKER = PHRASE.querySelector("div:last-child");
 
 const LINES = [
   {
