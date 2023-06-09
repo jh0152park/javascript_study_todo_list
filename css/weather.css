@@ -1,0 +1,18 @@
+.weather {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  align-items: end;
+  color: azure;
+  font-size: 50px;
+  font-weight: bold;
+  animation: lotate 5s linear infinite;
+}
+
+@keyframes lotate {
+  from {
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

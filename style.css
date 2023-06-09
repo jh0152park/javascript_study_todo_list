@@ -1,6 +1,7 @@
 @import "css/clock.css";
 @import "css/welcome.css";
 @import "css/phrase.css";
+@import "css/weather.css";
 
 * {
   margin: 0;

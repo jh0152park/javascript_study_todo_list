@@ -29,7 +29,7 @@
 #hello {
   display: flex;
   justify-content: center;
-  color: white;
+  color: azure;
   font-size: 50px;
   font-weight: bold;
   margin-top: -30px;
