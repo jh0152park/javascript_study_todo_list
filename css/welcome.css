@@ -1,0 +1,36 @@
+#input {
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+#input input {
+  padding: 10px 0px;
+  border: none;
+  background: none;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  opacity: 0.7;
+  border-bottom: solid 1px black;
+}
+
+#input input::placeholder {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+#hello {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -30px;
+}
