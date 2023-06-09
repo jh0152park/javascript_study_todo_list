@@ -1,4 +1,8 @@
-const lines = [
+const PHRASE = document.querySelector("#phrase");
+const LINE = PHRASE.querySelector("div:first-child");
+const SPEAKER = PHRASE.querySelector("div:nth-child(2)");
+
+const LINES = [
   {
     line: "When you believe in a thing, believe in it all the way, implicitly and unquestionable.",
     speaker: "Walt Disney",
@@ -40,3 +44,19 @@ const lines = [
     speaker: "Rapunzel",
   },
 ];
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function updatePhrase() {
+  let phrase = LINES[getRandomInt(0, LINES.length)];
+
+  LINE.innerText = phrase.line;
+  SPEAKER.innerText = `-by ${phrase.speaker}`;
+}
+
+updatePhrase();
+setInterval(updatePhrase, 1000 * 60 * 5);
