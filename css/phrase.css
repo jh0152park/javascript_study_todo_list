@@ -1,0 +1,17 @@
+#phrase {
+  position: absolute;
+  padding-left: 50px;
+  bottom: 70px;
+  color: beige;
+  font-weight: bold;
+  font-size: 20px;
+  width: 600px;
+}
+
+#phrase div:first-child {
+  text-align: left;
+}
+
+#phrase div:last-child {
+  text-align: right;
+}
