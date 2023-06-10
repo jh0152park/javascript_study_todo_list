@@ -18,23 +18,42 @@
     <div id="clock">00:00:00</div>
 
     <form id="input">
-      <input type="text" placeholder="Welcome, What is your Name?" />
+      <input
+        minlength="2"
+        maxlength="15"
+        required
+        type="text"
+        placeholder="Welcome, What is your Name?"
+      />
     </form>
 
     <div id="hello">
       <span></span>
     </div>
 
+    <form id="todo">
+      <input
+        class="hide"
+        required
+        type="text"
+        placeholder="Let me know what you gonna do!"
+      />
+    </form>
+
     <div id="phrase">
       <div></div>
       <div></div>
     </div>
 
-    <script src="javascript/background.js"></script>
-    <script src="javascript/clock.js"></script>
-    <script src="javascript/welcome.js"></script>
-    <script src="javascript/phrase.js"></script>
-    <script src="javascript/weather.js"></script>
+    <p id="todo_button">Todo</p>
+    <div id="todo_board"></div>
+
+    <script type="module" src="javascript/background.js"></script>
+    <script type="module" src="javascript/clock.js"></script>
+    <script type="module" src="javascript/welcome.js"></script>
+    <script type="module" src="javascript/phrase.js"></script>
+    <script type="module" src="javascript/weather.js"></script>
+    <script type="module" src="javascript/todo.js"></script>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

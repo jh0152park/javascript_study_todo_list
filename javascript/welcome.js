@@ -1,6 +1,7 @@
-let USER = localStorage.getItem("user_name");
-const INPUT = document.querySelector("#input input");
-const WELCOME = document.querySelector("#hello span");
+export let USER = localStorage.getItem("user_name");
+export const INPUT_FORM = document.querySelector("#input");
+export const INPUT = INPUT_FORM.querySelector("#input input");
+export const WELCOME = document.querySelector("#hello span");
 
 function handleInputUser(event) {
   event.preventDefault();
@@ -39,5 +40,5 @@ function checkUserCondition() {
   }
 }
 
-addEventListener("submit", handleInputUser);
+INPUT_FORM.addEventListener("submit", handleInputUser);
 checkUserCondition();

@@ -24,3 +24,4 @@ function setBackgroundImage() {
 }
 
 setBackgroundImage();
+setInterval(setBackgroundImage, 5 * 60 * 1000);
