@@ -16,3 +16,12 @@
     transform: rotateY(360deg);
   }
 }
+
+#weather_box {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  color: azure;
+  font-weight: bold;
+  text-align: center;
+}

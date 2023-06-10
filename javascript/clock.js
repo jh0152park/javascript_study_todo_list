@@ -15,7 +15,7 @@ function updateCurrentDate() {
   const day = date.getDate();
   const today = document.querySelector("#date");
 
-  today.innerText = `${year}/${month}/${day}`;
+  today.innerText = `${year}.${month}.${day}`;
 }
 
 setInterval(updateCurrentTime, 1000);
