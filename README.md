@@ -9,7 +9,7 @@ Change background image with 10 random images every single 5 minutes.
 Update weather, temperature, location information every single 5 minutes, and also it's must need access permission to location.
 
 # Phrase
-Update phrase at left bottom of window every single 5 minutes, also every phrases from disney movies.
+Update phrase at left bottom of window every single 5 minutes, and every phrases are from disney movies.
 
 # Todo items
 Can see entire todo items with `Todo` button at right bottom of window.
