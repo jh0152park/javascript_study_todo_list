@@ -2,6 +2,7 @@
 @import "css/welcome.css";
 @import "css/phrase.css";
 @import "css/weather.css";
+@import "css/todo.css";
 
 * {
   margin: 0;
