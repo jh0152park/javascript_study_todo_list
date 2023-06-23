@@ -18,6 +18,7 @@ const ICONS = {
     Atmosphere: "fas fa-smog",
     Clear: "fas fa-sun",
     Clouds: "fas fa-cloud",
+    Haze: "fas fa-smog",
 };
 
 function updateCurrentGeographic(lat, lon) {
@@ -87,11 +88,8 @@ function updateGeographicPosition(position) {
             cur_temp = data.main.temp;
             min_temp = data.main.temp_min;
             max_temp = data.main.temp_max;
-            icon = ICONS[weather];
-
-            console.log(data);
-            console.log(weather);
-            console.log(icon);
+            // icon = ICONS[weather];
+            icon = weather in ICONS ? ICONS[weather] : ICONS["Clear"];
 
             WEATHER.appendChild(createIcon(icon));
             updateMainWeather(weather);
@@ -126,7 +124,8 @@ function updateCurrentWeather() {
             cur_temp = data.main.temp;
             min_temp = data.main.temp_min;
             max_temp = data.main.temp_max;
-            icon = ICONS[weather];
+            // icon = ICONS[weather];
+            icon = weather in ICONS ? ICONS[weather] : ICONS["Clear"];
 
             updateWeatherIcon(icon);
             updateMainWeather(weather);
