@@ -89,6 +89,10 @@ function updateGeographicPosition(position) {
             max_temp = data.main.temp_max;
             icon = ICONS[weather];
 
+            console.log(data);
+            console.log(weather);
+            console.log(icon);
+
             WEATHER.appendChild(createIcon(icon));
             updateMainWeather(weather);
             updateCurrentLocation(city, state);
@@ -123,10 +127,6 @@ function updateCurrentWeather() {
             min_temp = data.main.temp_min;
             max_temp = data.main.temp_max;
             icon = ICONS[weather];
-
-            console.log(data);
-            console.log(weather);
-            console.log(icon);
 
             updateWeatherIcon(icon);
             updateMainWeather(weather);
